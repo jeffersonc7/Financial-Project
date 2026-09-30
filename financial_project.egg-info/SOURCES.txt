@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+financial_project.egg-info/PKG-INFO
+financial_project.egg-info/SOURCES.txt
+financial_project.egg-info/dependency_links.txt
+financial_project.egg-info/top_level.txt
+src/__init__.py
+src/azure_storage.py
