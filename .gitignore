@@ -1,2 +1,11 @@
 # virtual environment
 .venv/
+
+# Python-generated files
+__pycache__/
+
+# Setuptools packaging metadata and build artifacts
+*.egg-info/
+
+# Automatic Jupyter checkpoints
+.ipynb_checkpoints/

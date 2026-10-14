@@ -1,6 +1,8 @@
-from azure.identity import DefaultAzureCredential
-from azure.storage.filedatalake import DataLakeServiceClient
 import os
+
+from azure.storage.filedatalake import DataLakeServiceClient
+
+from financial_project.azure.auth import get_credential
 
 
 def get_service_client():
@@ -8,11 +10,9 @@ def get_service_client():
     account_name = os.environ["AZURE_STORAGE_ACCOUNT"]
     account_url = f"https://{account_name}.dfs.core.windows.net"
 
-    credential = DefaultAzureCredential()
-
     return DataLakeServiceClient(
         account_url=account_url,
-        credential=credential,
+        credential=get_credential(),
     )
 
 

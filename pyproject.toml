@@ -8,5 +8,5 @@ version = "0.1.0"
 description = "Tools for the Financial-Project notebooks"
 requires-python = ">=3.10"
 
-[tool.setuptools]
-packages = ["src"]
+[tool.setuptools.packages.find]
+where = ["src"]
